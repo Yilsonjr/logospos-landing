@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrarse — Logos POS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+</head>
+
+<body>
+    <div class="auth-page">
+        <div class="auth-bg-effects">
+            <div class="auth-orb auth-orb-1"></div>
+            <div class="auth-orb auth-orb-2"></div>
+            <div class="auth-grid"></div>
+        </div>
+
+        <div class="auth-container">
+            <!-- Left: Branding -->
+            <div class="auth-branding">
+                <a href="/" class="auth-logo">
+                    <img src="/logo.png" alt="" class="brand-logo" onerror="this.style.display='none'">
+                    <span class="brand-text">Logos<span class="brand-accent">POS</span></span>
+                </a>
+                <h1>Moderniza tu negocio hoy</h1>
+                <p>Únete a cientos de negocios dominicanos que ya gestionan sus ventas, inventario y facturación con
+                    Logos POS.</p>
+                <div class="auth-features">
+                    <div class="auth-feature"><i class="bi bi-check-circle-fill"></i> Configuración en minutos</div>
+                    <div class="auth-feature"><i class="bi bi-check-circle-fill"></i> Sin contratos a largo plazo</div>
+                    <div class="auth-feature"><i class="bi bi-check-circle-fill"></i> Soporte 24/7</div>
+                    <div class="auth-feature"><i class="bi bi-check-circle-fill"></i> Prueba gratuita de 7 días</div>
+                </div>
+            </div>
+
+            <!-- Right: Form -->
+            <div class="auth-form-wrapper">
+                <!-- Tabs -->
+                <div class="auth-tabs">
+                    <button class="auth-tab active" id="tab-register" data-tab="register">Crear Cuenta</button>
+                    <button class="auth-tab" id="tab-login" data-tab="login">Iniciar Sesión</button>
+                </div>
+
+                <!-- Register Form -->
+                <form id="register-form" class="auth-form">
+                    <div class="form-row-2">
+                        <div class="form-group">
+                            <label for="reg-nombre">Nombre *</label>
+                            <input type="text" id="reg-nombre" placeholder="Juan" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-apellido">Apellido *</label>
+                            <input type="text" id="reg-apellido" placeholder="Pérez" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-negocio">Nombre del Negocio *</label>
+                        <input type="text" id="reg-negocio" placeholder="Mi Negocio Express" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-email">Correo Electrónico *</label>
+                        <input type="email" id="reg-email" placeholder="correo@ejemplo.com" required>
+                    </div>
+                    <div class="form-row-2">
+                        <div class="form-group">
+                            <label for="reg-username">Nombre de Usuario *</label>
+                            <input type="text" id="reg-username" placeholder="juanperez" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-telefono">Teléfono</label>
+                            <input type="tel" id="reg-telefono" placeholder="+1 (809) 555-0000">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-password">Contraseña *</label>
+                        <div class="password-input">
+                            <input type="password" id="reg-password" placeholder="Mínimo 6 caracteres" required
+                                minlength="6">
+                            <button type="button" class="password-toggle" id="toggle-password">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Selected plan display -->
+                    <div class="selected-plan" id="selected-plan-display" style="display:none;">
+                        <span class="plan-label">Plan seleccionado:</span>
+                        <span class="plan-value" id="plan-name-display"></span>
+                        <a href="/#pricing" class="plan-change">Cambiar</a>
+                    </div>
+
+                    <div class="form-error" id="register-error" style="display:none;"></div>
+
+                    <button type="submit" class="btn btn-accent w-100" id="register-btn">
+                        <span class="btn-text">Crear Cuenta y Continuar</span>
+                        <span class="btn-loading" style="display:none;">
+                            <span class="spinner"></span> Creando cuenta...
+                        </span>
+                    </button>
+
+                    <p class="auth-terms">
+                        Al registrarte, aceptas nuestros <a href="#">Términos de Servicio</a> y <a href="#">Política de
+                            Privacidad</a>.
+                    </p>
+                </form>
+
+                <!-- Login Form -->
+                <form id="login-form" class="auth-form" style="display:none;">
+                    <div class="form-group">
+                        <label for="login-email">Correo Electrónico</label>
+                        <input type="email" id="login-email" placeholder="correo@ejemplo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Contraseña</label>
+                        <div class="password-input">
+                            <input type="password" id="login-password" placeholder="Tu contraseña" required>
+                            <button type="button" class="password-toggle" id="toggle-login-password">
+                                <i class="bi bi-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-error" id="login-error" style="display:none;"></div>
+                    <button type="submit" class="btn btn-accent w-100" id="login-btn">
+                        <span class="btn-text">Iniciar Sesión</span>
+                        <span class="btn-loading" style="display:none;">
+                            <span class="spinner"></span> Ingresando...
+                        </span>
+                    </button>
+                    <p class="auth-forgot"><a href="#">¿Olvidaste tu contraseña?</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/register.js"></script>
+</body>
+
+</html>

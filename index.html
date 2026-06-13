@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logos POS — Sistema Punto de Venta en la Nube</title>
+    <meta name="description"
+        content="Logos POS: el sistema de punto de venta más completo de República Dominicana. Gestiona ventas, inventario, facturación fiscal y más. Paga con tarjeta o criptomonedas.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">
+                <img src="/logo.png" alt="Logos POS" class="brand-logo" onerror="this.style.display='none'">
+                <span class="brand-text">Logos<span class="brand-accent">POS</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon">
+                    <span></span><span></span><span></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#features">Funciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Planes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#payments">Pagos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="/register.html?mode=login" class="btn btn-outline-light btn-sm me-2"
+                        id="nav-login-btn">Iniciar Sesión</a>
+                    <a href="/register.html?plan=profesional" class="btn btn-accent btn-sm"
+                        id="nav-register-btn">Comenzar Gratis</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero-section" id="hero">
+        <div class="hero-bg-effects">
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-orb hero-orb-3"></div>
+            <div class="hero-grid"></div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 hero-content">
+                    <div class="hero-badge" data-animate="fade-up">
+                        <span class="badge-dot"></span>
+                        Nuevo: Pagos con Criptomonedas
+                    </div>
+                    <h1 class="hero-title" data-animate="fade-up" data-delay="100">
+                        Tu negocio merece un
+                        <span class="gradient-text">punto de venta inteligente</span>
+                    </h1>
+                    <p class="hero-subtitle" data-animate="fade-up" data-delay="200">
+                        Gestiona ventas, inventario, facturación fiscal y más desde cualquier dispositivo.
+                        El POS más completo de <strong>República Dominicana</strong>, ahora en la nube.
+                    </p>
+                    <div class="hero-cta" data-animate="fade-up" data-delay="300">
+                        <a href="/register.html?plan=profesional" class="btn btn-accent btn-lg" id="hero-cta-btn">
+                            Comenzar Gratis
+                            <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                        <a href="#features" class="btn btn-ghost btn-lg" id="hero-demo-btn">
+                            <i class="bi bi-play-circle me-2"></i>
+                            Ver Demo
+                        </a>
+                    </div>
+                    <div class="hero-stats" data-animate="fade-up" data-delay="400">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Negocios activos</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">99.9%</span>
+                            <span class="stat-label">Uptime</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Soporte</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-visual" data-animate="fade-left" data-delay="200">
+                    <div class="hero-mockup">
+                        <div class="mockup-window">
+                            <div class="mockup-header">
+                                <div class="mockup-dots">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="mockup-title">Logos POS — Dashboard</div>
+                            </div>
+                            <div class="mockup-body">
+                                <div class="mockup-sidebar">
+                                    <div class="ms-item active"></div>
+                                    <div class="ms-item"></div>
+                                    <div class="ms-item"></div>
+                                    <div class="ms-item"></div>
+                                    <div class="ms-item"></div>
+                                </div>
+                                <div class="mockup-content">
+                                    <div class="mc-stats">
+                                        <div class="mc-stat-card card-blue">
+                                            <div class="mc-stat-icon"><i class="bi bi-cart3"></i></div>
+                                            <div class="mc-stat-info">
+                                                <span class="mc-stat-val">RD$125,400</span>
+                                                <span class="mc-stat-lbl">Ventas Hoy</span>
+                                            </div>
+                                        </div>
+                                        <div class="mc-stat-card card-green">
+                                            <div class="mc-stat-icon"><i class="bi bi-box-seam"></i></div>
+                                            <div class="mc-stat-info">
+                                                <span class="mc-stat-val">1,284</span>
+                                                <span class="mc-stat-lbl">Productos</span>
+                                            </div>
+                                        </div>
+                                        <div class="mc-stat-card card-purple">
+                                            <div class="mc-stat-icon"><i class="bi bi-people"></i></div>
+                                            <div class="mc-stat-info">
+                                                <span class="mc-stat-val">342</span>
+                                                <span class="mc-stat-lbl">Clientes</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mc-chart">
+                                        <div class="chart-bars">
+                                            <div class="chart-bar" style="--h:40%"></div>
+                                            <div class="chart-bar" style="--h:65%"></div>
+                                            <div class="chart-bar" style="--h:45%"></div>
+                                            <div class="chart-bar" style="--h:80%"></div>
+                                            <div class="chart-bar" style="--h:55%"></div>
+                                            <div class="chart-bar" style="--h:90%"></div>
+                                            <div class="chart-bar active" style="--h:70%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floating-card card-float-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span>Venta completada — RD$2,450</span>
+                        </div>
+                        <div class="floating-card card-float-2">
+                            <i class="bi bi-shield-lock-fill text-info"></i>
+                            <span>NCF generado exitosamente</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURES ===== -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="section-header text-center" data-animate="fade-up">
+                <span class="section-tag">Funcionalidades</span>
+                <h2 class="section-title">Todo lo que necesitas para <span class="gradient-text">gestionar tu
+                        negocio</span></h2>
+                <p class="section-subtitle">Módulos potentes diseñados para negocios dominicanos. Sin límites, sin
+                    complicaciones.</p>
+            </div>
+            <div class="row g-4 mt-4">
+                <!-- Feature 1 -->
+                <div class="col-lg-4 col-md-6" data-animate="fade-up" data-delay="0">
+                    <div class="feature-card">
+                        <div class="feature-icon icon-blue">
+                            <i class="bi bi-cart3"></i>
+                        </div>
+                        <h3>Punto de Venta</h3>
+                        <p>Procesa ventas rápidamente con una interfaz intuitiva. Soporta múltiples métodos de pago,
+                            descuentos y devoluciones.</p>
+                        <ul class="feature-list">
+                            <li><i class="bi bi-check2"></i> Ventas rápidas y a crédito</li>
+                            <li><i class="bi bi-check2"></i> Notas de crédito</li>
+                            <li><i class="bi bi-check2"></i> Conduce de salida</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Feature 2 -->
+                <div class="col-lg-4 col-md-6" data-animate="fade-up" data-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-icon icon-green">
+                            <i class="bi bi-box-seam"></i>
+                        </div>
+                        <h3>Inventario</h3>
+                        <p>Control total de tu inventario en tiempo real. Gestiona productos, categorías, unidades de
+                            medida y proveedores.</p>
+                        <ul class="feature-list">
+                            <li><i class="bi bi-check2"></i> Stock en tiempo real</li>
+                            <li><i class="bi bi-check2"></i> Alertas de inventario bajo</li>
+                            <li><i class="bi bi-check2"></i> Múltiples unidades</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Feature 3 -->
+                <div class="col-lg-4 col-md-6" data-animate="fade-up" data-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-icon icon-purple">
+                            <i class="bi bi-receipt"></i>
+                        </div>
+                        <h3>Facturación Fiscal</h3>
+                        <p>Cumple con la DGII automáticamente. Genera NCF, calcula ITBIS y exporta reportes 606, 607 y
+                            608.</p>
+                        <ul class="feature-list">
+                            <li><i class="bi bi-check2"></i> NCF automático</li>
+                            <li><i class="bi bi-check2"></i> Reportes DGII</li>
+                            <li><i class="bi bi-check2"></i> Cálculo de ITBIS</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Feature 4 -->
+                <div class="col-lg-4 col-md-6" data-animate="fade-up" data-delay="300">
+                    <div class="feature-card">
+                        <div class="feature-icon icon-orange">
+                            <i class="bi bi-cash-stack"></i>
+                        </div>
+                        <h3>Gestión de Caja</h3>
+                        <p>Controla cada centavo con apertura, cierre y arqueo de caja. Registra entradas y salidas de
+                            efectivo.</p>
+                        <ul class="feature-list">
+                            <li><i class="bi bi-check2"></i> Apertura y cierre</li>
+                            <li><i class="bi bi-check2"></i> Arqueo de caja</li>
+                            <li><i class="bi bi-check2"></i> Historial completo</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Feature 5 -->
+                <div class="col-lg-4 col-md-6" data-animate="fade-up" data-delay="400">
+                    <div class="feature-card">
+                        <div class="feature-icon icon-pink">
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </div>
+                        <h3>Reportes y Analytics</h3>
+                        <p>Toma decisiones basadas en datos. Reportes de ventas, inventario, clientes y margen de
+                            ganancia.</p>
+                        <ul class="feature-list">
+                            <li><i class="bi bi-check2"></i> Dashboard en tiempo real</li>
+                            <li><i class="bi bi-check2"></i> Margen de ganancia</li>
+                            <li><i class="bi bi-check2"></i> Exportación a Excel</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Feature 6 -->
+                <div class="col-lg-4 col-md-6" data-animate="fade-up" data-delay="500">
+                    <div class="feature-card">
+                        <div class="feature-icon icon-cyan">
+                            <i class="bi bi-wifi-off"></i>
+                        </div>
+                        <h3>Modo Offline</h3>
+                        <p>Sigue vendiendo aunque se caiga el internet. Sincronización automática cuando vuelva la
+                            conexión.</p>
+                        <ul class="feature-list">
+                            <li><i class="bi bi-check2"></i> Ventas sin conexión</li>
+                            <li><i class="bi bi-check2"></i> Sync automático</li>
+                            <li><i class="bi bi-check2"></i> Datos locales seguros</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRICING ===== -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-header text-center" data-animate="fade-up">
+                <span class="section-tag">Planes y Precios</span>
+                <h2 class="section-title">Elige el plan perfecto para <span class="gradient-text">tu negocio</span></h2>
+                <p class="section-subtitle">Sin contratos. Sin sorpresas. Cancela cuando quieras.</p>
+            </div>
+
+            <!-- Selector de Producto -->
+            <div class="product-selector" data-animate="fade-up" data-delay="50">
+                <button class="product-btn active" data-product="pos_general">
+                    <i class="bi bi-shop"></i>
+                    <span>POS General</span>
+                    <small>Retail · Tiendas · Farmacias</small>
+                </button>
+                <button class="product-btn" data-product="pos_food">
+                    <i class="bi bi-egg-fried"></i>
+                    <span>Restaurante / Billar</span>
+                    <small>Comandas · Mesas · Cocina</small>
+                </button>
+            </div>
+
+            <!-- Toggle Mensual/Anual -->
+            <div class="pricing-toggle" data-animate="fade-up" data-delay="100">
+                <span class="toggle-label" id="monthly-label">Mensual</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="pricing-toggle">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span class="toggle-label" id="annual-label">
+                    Anual
+                    <span class="toggle-badge">-20%</span>
+                </span>
+            </div>
+
+            <div class="row g-4 mt-3 justify-content-center">
+                <!-- Plan Emprendedor -->
+                <div class="col-lg-4 col-md-6" data-animate="fade-up" data-delay="0">
+                    <div class="pricing-card" data-plan="emprendedor">
+                        <div class="pricing-header">
+                            <div class="plan-icon plan-icon-starter">
+                                <i class="bi bi-rocket-takeoff"></i>
+                            </div>
+                            <h3 class="plan-name">Emprendedor</h3>
+                            <p class="plan-desc">Para negocios que están empezando</p>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="price-currency">RD$</span>
+                            <span class="price-amount" data-monthly="1,200" data-annual="960">1,200</span>
+                            <span class="price-period">/mes</span>
+                        </div>
+                        <div class="annual-savings" style="display:none;">Ahorras RD$2,880/año</div>
+                        <ul class="pricing-features">
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> 1 usuario</li>
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> Punto de Venta</li>
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> Hasta 500 productos</li>
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> Gestión de clientes</li>
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> Caja (apertura/cierre)</li>
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> Dashboard básico</li>
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> Modo offline</li>
+                            <li class="excluded"><i class="bi bi-x-circle"></i> Facturación fiscal (DGII)</li>
+                            <li class="excluded"><i class="bi bi-x-circle"></i> Cuentas por cobrar/pagar</li>
+                            <li class="excluded"><i class="bi bi-x-circle"></i> Multi-sucursal</li>
+                        </ul>
+                        <a href="/register.html?plan=emprendedor&producto=pos_general" class="btn btn-outline-accent w-100"
+                            id="plan-starter-btn" data-plan-link="emprendedor">Comenzar Gratis</a>
+                    </div>
+                </div>
+
+                <!-- Plan Profesional -->
+                <div class="col-lg-4 col-md-6" data-animate="fade-up" data-delay="100">
+                    <div class="pricing-card popular" data-plan="profesional">
+                        <div class="popular-badge">⭐ Más Popular</div>
+                        <div class="pricing-header">
+                            <div class="plan-icon plan-icon-pro">
+                                <i class="bi bi-stars"></i>
+                            </div>
+                            <h3 class="plan-name">Profesional</h3>
+                            <p class="plan-desc">Para negocios en crecimiento</p>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="price-currency">RD$</span>
+                            <span class="price-amount" data-monthly="2,500" data-annual="2,000">2,500</span>
+                            <span class="price-period">/mes</span>
+                        </div>
+                        <div class="annual-savings" style="display:none;">Ahorras RD$6,000/año</div>
+                        <ul class="pricing-features">
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> Hasta 5 usuarios</li>
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> Todo del Emprendedor</li>
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> Productos ilimitados</li>
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> Compras y proveedores</li>
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> Facturación fiscal (NCF/DGII)
+                            </li>
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> Reportes DGII (606/607/608)
+                            </li>
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> Cuentas por cobrar</li>
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> Roles y permisos (3 roles)</li>
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> Hasta 3 sucursales</li>
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> Margen de ganancia</li>
+                        </ul>
+                        <a href="/register.html?plan=profesional&producto=pos_general" class="btn btn-accent w-100"
+                            id="plan-pro-btn" data-plan-link="profesional">Comenzar Gratis</a>
+                    </div>
+                </div>
+
+                <!-- Plan Enterprise -->
+                <div class="col-lg-4 col-md-6" data-animate="fade-up" data-delay="200">
+                    <div class="pricing-card" data-plan="enterprise">
+                        <div class="pricing-header">
+                            <div class="plan-icon plan-icon-enterprise">
+                                <i class="bi bi-building"></i>
+                            </div>
+                            <h3 class="plan-name">Enterprise</h3>
+                            <p class="plan-desc">Para empresas grandes</p>
+                        </div>
+                        <div class="pricing-price">
+                            <span class="price-currency">RD$</span>
+                            <span class="price-amount" data-monthly="5,000" data-annual="4,000">5,000</span>
+                            <span class="price-period">/mes</span>
+                        </div>
+                        <div class="annual-savings" style="display:none;">Ahorras RD$12,000/año</div>
+                        <ul class="pricing-features">
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> Usuarios ilimitados</li>
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> Todo del Profesional</li>
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> Sucursales ilimitadas</li>
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> Roles ilimitados</li>
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> Cuentas por cobrar y pagar</li>
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> Estado de cuenta clientes</li>
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> API de integración</li>
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> Soporte prioritario 24/7</li>
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> Personalización de marca</li>
+                            <li class="included"><i class="bi bi-check-circle-fill"></i> Onboarding dedicado</li>
+                        </ul>
+                        <a href="https://wa.me/18095550123?text=Hola%2C%20me%20interesa%20el%20plan%20Enterprise%20de%20Logos%20POS"
+                            class="btn btn-outline-accent w-100" id="plan-enterprise-btn" target="_blank">Contactar
+                            Ventas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PAYMENTS ===== -->
+    <section class="payments-section" id="payments">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-animate="fade-right">
+                    <span class="section-tag">Métodos de Pago</span>
+                    <h2 class="section-title">Paga como prefieras: <span class="gradient-text">tarjetas o crypto</span>
+                    </h2>
+                    <p class="section-subtitle mb-4">
+                        Somos el único POS en República Dominicana que acepta pagos de suscripción con criptomonedas.
+                        Paga tu plan mensual con la moneda que prefieras.
+                    </p>
+                    <div class="payment-methods">
+                        <div class="payment-group">
+                            <h4><i class="bi bi-credit-card me-2"></i>Tarjetas</h4>
+                            <div class="payment-logos">
+                                <div class="payment-logo" title="Visa">
+                                    <i class="bi bi-credit-card-2-front"></i>
+                                    <span>Visa</span>
+                                </div>
+                                <div class="payment-logo" title="Mastercard">
+                                    <i class="bi bi-credit-card-2-back"></i>
+                                    <span>Mastercard</span>
+                                </div>
+                                <div class="payment-logo" title="Amex">
+                                    <i class="bi bi-credit-card"></i>
+                                    <span>Amex</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-group">
+                            <h4><i class="bi bi-currency-bitcoin me-2"></i>Criptomonedas</h4>
+                            <div class="payment-logos">
+                                <div class="payment-logo crypto" title="Bitcoin">
+                                    <i class="bi bi-currency-bitcoin"></i>
+                                    <span>Bitcoin</span>
+                                </div>
+                                <div class="payment-logo crypto" title="Ethereum">
+                                    <i class="bi bi-currency-exchange"></i>
+                                    <span>Ethereum</span>
+                                </div>
+                                <div class="payment-logo crypto" title="USDC">
+                                    <i class="bi bi-coin"></i>
+                                    <span>USDC</span>
+                                </div>
+                                <div class="payment-logo crypto" title="USDT">
+                                    <i class="bi bi-coin"></i>
+                                    <span>USDT</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-animate="fade-left">
+                    <div class="crypto-visual">
+                        <div class="crypto-card-main">
+                            <div class="crypto-card-glow"></div>
+                            <div class="crypto-card-content">
+                                <div class="crypto-card-header">
+                                    <i class="bi bi-shield-check"></i>
+                                    <span>Pago Seguro</span>
+                                </div>
+                                <div class="crypto-amount">
+                                    <span class="crypto-label">Suscripción Profesional</span>
+                                    <span class="crypto-value">RD$2,500/mes</span>
+                                </div>
+                                <div class="crypto-options">
+                                    <div class="crypto-option">
+                                        <i class="bi bi-currency-bitcoin"></i>
+                                        <div>
+                                            <span class="co-name">Bitcoin</span>
+                                            <span class="co-amount">0.00042 BTC</span>
+                                        </div>
+                                    </div>
+                                    <div class="crypto-option active">
+                                        <i class="bi bi-coin"></i>
+                                        <div>
+                                            <span class="co-name">USDC</span>
+                                            <span class="co-amount">42.00 USDC</span>
+                                        </div>
+                                        <i class="bi bi-check-circle-fill co-check"></i>
+                                    </div>
+                                </div>
+                                <button class="btn btn-accent w-100 mt-3">
+                                    <i class="bi bi-lock me-2"></i>Confirmar Pago
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header text-center" data-animate="fade-up">
+                <span class="section-tag">Testimonios</span>
+                <h2 class="section-title">Lo que dicen nuestros <span class="gradient-text">clientes</span></h2>
+            </div>
+            <div class="row g-4 mt-4">
+                <div class="col-lg-4 col-md-6" data-animate="fade-up" data-delay="0">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"Logos POS transformó mi negocio. Ya no tengo que llevar cuentas en
+                            libretas. Todo está automatizado y puedo ver mis ventas desde el teléfono."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MR</div>
+                            <div>
+                                <strong>María Rodríguez</strong>
+                                <span>Minimarket La Bendición, Santo Domingo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-animate="fade-up" data-delay="100">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">"Lo mejor es el módulo fiscal. Generar los NCF y los reportes de la
+                            DGII era una pesadilla, ahora se hace solo. Me ahorra horas cada mes."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">CP</div>
+                            <div>
+                                <strong>Carlos Peña</strong>
+                                <span>Ferretería Nacional, Santiago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-animate="fade-up" data-delay="200">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-half"></i>
+                        </div>
+                        <p class="testimonial-text">"Tengo 3 sucursales y puedo ver todo desde un solo lugar. El modo
+                            offline me salvó cuando se fue la luz y pude seguir vendiendo sin parar."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">JM</div>
+                            <div>
+                                <strong>Juan Martínez</strong>
+                                <span>Distribuidora JM, La Vega</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header text-center" data-animate="fade-up">
+                <span class="section-tag">Preguntas Frecuentes</span>
+                <h2 class="section-title">¿Tienes <span class="gradient-text">preguntas</span>?</h2>
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item" data-animate="fade-up" data-delay="0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1">
+                                    ¿Necesito instalar algo en mi computadora?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    No. Logos POS funciona completamente en la nube. Solo necesitas un navegador web y
+                                    conexión a internet. Además, nuestro modo offline te permite seguir vendiendo si
+                                    pierdes conexión temporalmente.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-animate="fade-up" data-delay="50">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2">
+                                    ¿Puedo cambiar de plan en cualquier momento?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    ¡Sí! Puedes subir o bajar de plan cuando quieras. El cambio se aplica de inmediato y
+                                    se ajusta tu facturación proporcionalmente. Sin penalidades ni contratos a largo
+                                    plazo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-animate="fade-up" data-delay="100">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq3">
+                                    ¿Cómo funciona el pago con criptomonedas?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Al momento de pagar tu suscripción, puedes seleccionar Bitcoin, Ethereum, USDC o
+                                    USDT como método de pago. El proceso es seguro y se confirma en minutos. Compatible
+                                    con cualquier wallet de criptomonedas.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-animate="fade-up" data-delay="150">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq4">
+                                    ¿Logos POS cumple con las regulaciones de la DGII?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sí. Nuestro módulo fiscal genera NCF automáticamente, calcula ITBIS y genera los
+                                    reportes 606, 607 y 608 listos para enviar a la DGII. Disponible en los planes
+                                    Profesional y Enterprise.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" data-animate="fade-up" data-delay="200">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq5">
+                                    ¿Mis datos están seguros?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutamente. Utilizamos encriptación de nivel bancario, backups automáticos
+                                    diarios y servidores seguros. Cada negocio tiene su propio espacio aislado
+                                    (multi-tenant) para máxima seguridad.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FINAL CTA ===== -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card" data-animate="fade-up">
+                <div class="cta-bg-effects">
+                    <div class="cta-orb cta-orb-1"></div>
+                    <div class="cta-orb cta-orb-2"></div>
+                </div>
+                <h2>¿Listo para modernizar tu negocio?</h2>
+                <p>Empieza hoy y únete a cientos de negocios dominicanos que ya usan Logos POS.</p>
+                <div class="cta-buttons">
+                    <a href="/register.html?plan=profesional" class="btn btn-light btn-lg" id="cta-start-btn">
+                        Comenzar Gratis
+                        <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                    <a href="https://wa.me/18095550123?text=Hola%2C%20quiero%20información%20sobre%20Logos%20POS"
+                        class="btn btn-outline-light btn-lg" id="cta-contact-btn" target="_blank">
+                        <i class="bi bi-whatsapp me-2"></i>
+                        Contactar por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <img src="/logo.png" alt="Logos POS" class="brand-logo" onerror="this.style.display='none'">
+                        <span class="brand-text">Logos<span class="brand-accent">POS</span></span>
+                    </div>
+                    <p class="footer-desc">El sistema de punto de venta más completo de República Dominicana. Gestiona
+                        tu negocio desde cualquier lugar.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Producto</h5>
+                    <ul class="footer-links">
+                        <li><a href="#features">Funciones</a></li>
+                        <li><a href="#pricing">Precios</a></li>
+                        <li><a href="#payments">Pagos</a></li>
+                        <li><a href="#">Actualizaciones</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Soporte</h5>
+                    <ul class="footer-links">
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">Centro de Ayuda</a></li>
+                        <li><a href="#">Documentación</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Legal</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Términos de Uso</a></li>
+                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5>Contacto</h5>
+                    <ul class="footer-links">
+                        <li><i class="bi bi-envelope me-2"></i>info@logospos.com</li>
+                        <li><i class="bi bi-whatsapp me-2"></i>+1 (809) 555-0123</li>
+                        <li><i class="bi bi-geo-alt me-2"></i>Santo Domingo, RD</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Logos POS. Todos los derechos reservados.</p>
+                <p class="footer-made">Hecho con <i class="bi bi-heart-fill text-danger"></i> en República Dominicana
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>

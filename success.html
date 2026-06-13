@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>¡Bienvenido! — Logos POS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+</head>
+
+<body>
+    <div class="auth-page">
+        <div class="auth-bg-effects">
+            <div class="auth-orb auth-orb-1"></div>
+            <div class="auth-orb auth-orb-2"></div>
+            <div class="auth-grid"></div>
+        </div>
+
+        <div class="success-container">
+            <a href="/" class="auth-logo" style="justify-content:center; margin-bottom:1.5rem;">
+                <img src="/logo.png" alt="" class="brand-logo" onerror="this.style.display='none'">
+                <span class="brand-text">Logos<span class="brand-accent">POS</span></span>
+            </a>
+            <div class="success-icon">
+                <div class="success-circle">
+                    <i class="bi bi-check-lg"></i>
+                </div>
+                <div class="success-confetti"></div>
+            </div>
+
+            <h1 class="success-title">¡Bienvenido a Logos POS!</h1>
+            <p class="success-subtitle">Tu cuenta ha sido creada exitosamente. Ya puedes acceder a tu punto de venta.
+            </p>
+
+            <!-- Credentials Card -->
+            <div class="credentials-card">
+                <h3><i class="bi bi-key me-2"></i>Tus Credenciales de Acceso</h3>
+                <div class="credential-row">
+                    <span class="cred-label">Negocio:</span>
+                    <span class="cred-value" id="cred-negocio">—</span>
+                </div>
+                <div class="credential-row">
+                    <span class="cred-label">Usuario:</span>
+                    <span class="cred-value" id="cred-username">—</span>
+                </div>
+                <div class="credential-row">
+                    <span class="cred-label">Contraseña:</span>
+                    <span class="cred-value" id="cred-password">••••••</span>
+                </div>
+                <div class="credential-row">
+                    <span class="cred-label">Plan:</span>
+                    <span class="cred-value" id="cred-plan">—</span>
+                </div>
+                <p class="cred-warning">
+                    <i class="bi bi-exclamation-triangle me-1"></i>
+                    Guarda estas credenciales. Las necesitarás para iniciar sesión en el POS.
+                </p>
+            </div>
+
+            <a href="#" class="btn btn-accent btn-lg w-100" id="go-to-pos">
+                <i class="bi bi-box-arrow-in-right me-2"></i>
+                Ir a Logos POS
+            </a>
+
+            <p class="success-help">
+                ¿Necesitas ayuda? <a href="#">Contacta soporte</a> o escríbenos por
+                <a href="#"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+            </p>
+        </div>
+    </div>
+
+    <script type="module" src="/success.js"></script>
+</body>
+
+</html>

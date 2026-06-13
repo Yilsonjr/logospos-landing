@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout — Logos POS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+</head>
+
+<body>
+    <div class="auth-page">
+        <div class="auth-bg-effects">
+            <div class="auth-orb auth-orb-1"></div>
+            <div class="auth-orb auth-orb-2"></div>
+            <div class="auth-grid"></div>
+        </div>
+
+        <div class="checkout-container">
+            <a href="/" class="auth-logo checkout-logo">
+                <img src="/logo.png" alt="" class="brand-logo" onerror="this.style.display='none'">
+                <span class="brand-text">Logos<span class="brand-accent">POS</span></span>
+            </a>
+
+            <h1 class="checkout-title">Completa tu suscripción</h1>
+            <p class="checkout-subtitle" id="user-greeting">Selecciona tu método de pago preferido</p>
+
+            <!-- Plan Summary -->
+            <div class="checkout-plan-card" id="plan-summary">
+                <div class="plan-summary-header">
+                    <div class="plan-summary-icon" id="plan-icon"><i class="bi bi-stars"></i></div>
+                    <div>
+                        <h3 id="checkout-plan-name">Profesional</h3>
+                        <p id="checkout-plan-desc">Para negocios en crecimiento</p>
+                    </div>
+                </div>
+
+                <!-- Toggle -->
+                <div class="checkout-toggle">
+                    <button class="period-btn active" data-period="mensual" id="btn-mensual">Mensual</button>
+                    <button class="period-btn" data-period="anual" id="btn-anual">
+                        Anual <span class="save-badge">-20%</span>
+                    </button>
+                </div>
+
+                <div class="plan-price-display">
+                    <span class="price-currency">RD$</span>
+                    <span class="price-amount" id="checkout-price">2,500</span>
+                    <span class="price-period">/mes</span>
+                </div>
+                <div class="annual-note" id="annual-note" style="display:none;">
+                    Ahorras <span id="savings-amount">RD$6,000</span> al año
+                </div>
+            </div>
+
+            <!-- Payment Methods -->
+            <div class="payment-methods-section">
+                <h2><i class="bi bi-credit-card me-2"></i>Método de Pago</h2>
+
+                <!-- Card Payment -->
+                <button class="payment-method-btn" id="pay-stripe">
+                    <div class="pm-left">
+                        <div class="pm-icon pm-card"><i class="bi bi-credit-card-2-front"></i></div>
+                        <div>
+                            <span class="pm-title">Tarjeta de Crédito / Débito</span>
+                            <span class="pm-subtitle">Visa, Mastercard, Amex</span>
+                        </div>
+                    </div>
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+
+                <!-- Crypto Payment -->
+                <button class="payment-method-btn" id="pay-crypto">
+                    <div class="pm-left">
+                        <div class="pm-icon pm-crypto"><i class="bi bi-currency-bitcoin"></i></div>
+                        <div>
+                            <span class="pm-title">Criptomonedas</span>
+                            <span class="pm-subtitle">Bitcoin, ETH, USDC, USDT</span>
+                        </div>
+                    </div>
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- Processing State -->
+            <div class="payment-processing" id="payment-processing" style="display:none;">
+                <div class="processing-spinner"></div>
+                <h3>Procesando tu pago...</h3>
+                <p>No cierres esta ventana</p>
+            </div>
+
+            <p class="checkout-secure">
+                <i class="bi bi-shield-lock me-1"></i>
+                Tus pagos están protegidos con encriptación de nivel bancario
+            </p>
+
+            <a href="/#pricing" class="checkout-back"><i class="bi bi-arrow-left me-2"></i>Cambiar de plan</a>
+        </div>
+    </div>
+
+    <script type="module" src="/checkout.js"></script>
+</body>
+
+</html>
