@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment variables (NEVER subir)
+.env
+.env.local
+.env.production
+.env.*.local
+
+# Vercel
+.vercel/
+
+# Screenshots de desarrollo
+ss-*.png
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+*.log

@@ -9,8 +9,7 @@ export const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdX
 // Stripe (test keys - replace with live keys for production)
 export const STRIPE_PUBLISHABLE_KEY = 'pk_test_PLACEHOLDER';
 
-// NOWPayments (live)
-export const NOWPAYMENTS_API_KEY = 'NJM2T7H-XTG4XP6-MS2F6MR-1DZMJG5';
+// NOWPayments (live) — API key set in Vercel environment variables
 export const NOWPAYMENTS_API_URL = 'https://api.nowpayments.io/v1';
 
 // POS URLs per product
