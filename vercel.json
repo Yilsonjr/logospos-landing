@@ -5,6 +5,8 @@
   "rewrites": [
     { "source": "/register", "destination": "/register.html" },
     { "source": "/checkout", "destination": "/checkout.html" },
-    { "source": "/success", "destination": "/success.html" }
+    { "source": "/success", "destination": "/success.html" },
+    { "source": "/terminos", "destination": "/terminos.html" },
+    { "source": "/privacidad", "destination": "/privacidad.html" }
   ]
 }
