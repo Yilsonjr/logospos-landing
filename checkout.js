@@ -5,9 +5,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './auth.css';
-import { PLANES, POS_APP_URL } from './src/config.js';
+import { PLANES } from './src/config.js';
 import { getSession, provisionarTenant } from './src/supabase.js';
-import { iniciarPagoStripe, iniciarPagoCrypto } from './src/payments.js';
+import { iniciarPagoCrypto } from './src/payments.js';
 
 let currentPlan = 'profesional';
 let currentPeriod = 'mensual';
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById('btn-anual')?.addEventListener('click', () => setPeriod('anual'));
 
     // Payment buttons
-    document.getElementById('pay-stripe')?.addEventListener('click', handleStripePayment);
+    document.getElementById('pay-stripe')?.addEventListener('click', handleLemonPayment);
     document.getElementById('pay-crypto')?.addEventListener('click', handleCryptoPayment);
 
     // Greeting
@@ -98,21 +98,27 @@ function updatePrice() {
     }
 }
 
-async function handleStripePayment() {
-    showProcessing(true);
-
-    try {
-        const result = await iniciarPagoStripe(currentPlan, currentPeriod);
-
-        if (result.success) {
-            // Payment successful — provision tenant
-            await provisionAndRedirect(result.paymentId, 'tarjeta');
-        }
-    } catch (error) {
-        console.error('Stripe error:', error);
-        showProcessing(false);
-        alert('Error al procesar el pago. Intenta de nuevo.');
+function handleLemonPayment() {
+    const plan = PLANES[currentPlan];
+    if (!plan?.lemon_url) {
+        alert('Método de pago no disponible para este plan.');
+        return;
     }
+
+    // Build checkout URL with prefilled email
+    let url = plan.lemon_url;
+    if (registroData?.email) {
+        url += `?checkout[email]=${encodeURIComponent(registroData.email)}`;
+        if (registroData.nombre) {
+            url += `&checkout[name]=${encodeURIComponent(registroData.nombre + ' ' + (registroData.apellido || ''))}`;
+        }
+    }
+
+    // Store registro data before leaving (webhook will provision after payment)
+    sessionStorage.setItem('pending_plan', currentPlan);
+    sessionStorage.setItem('pending_period', currentPeriod);
+
+    window.location.href = url;
 }
 
 async function handleCryptoPayment() {

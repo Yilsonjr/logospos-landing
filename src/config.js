@@ -69,6 +69,7 @@ export const PLANES = {
         nombre: 'Emprendedor',
         descripcion: 'Para negocios que están empezando',
         icon: 'bi-rocket-takeoff',
+        lemon_url: 'https://logospos.lemonsqueezy.com/checkout/buy/2780d611-cf78-49b3-98d4-25f12eb0e729',
         precios: {
             mensual: 1200,
             anual: 960
@@ -92,6 +93,7 @@ export const PLANES = {
         descripcion: 'Para negocios en crecimiento',
         icon: 'bi-stars',
         popular: true,
+        lemon_url: 'https://logospos.lemonsqueezy.com/checkout/buy/9a638024-0e82-4374-87c4-c2afdd8c0941',
         precios: {
             mensual: 2500,
             anual: 2000
@@ -117,6 +119,7 @@ export const PLANES = {
         nombre: 'Enterprise',
         descripcion: 'Para empresas grandes',
         icon: 'bi-building',
+        lemon_url: 'https://logospos.lemonsqueezy.com/checkout/buy/aee55f24-2fcf-4479-9559-d2375637a1dc',
         precios: {
             mensual: 5000,
             anual: 4000
